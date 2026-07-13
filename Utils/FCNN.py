@@ -7,8 +7,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.model_selection import train_test_split
 import numpy as np
 ## set the color themes of the figures
-import requests
-style = requests.get("https://compu-flair.com/notes/jupyter-color-style/raw").text
+style = open("plot_style.py").read()
 exec(style)
 
 def draw_fully_connected_1_50_1() -> None:

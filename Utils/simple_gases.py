@@ -5,7 +5,7 @@ import os
 
 ## set the color themes of the figures
 import requests
-style = requests.get("https://compu-flair.com/notes/jupyter-color-style/raw").text
+style = open("plot_style.py").read()
 exec(style)
 
 def create_gas_animation():
